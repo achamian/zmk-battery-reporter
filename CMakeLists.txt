@@ -1,0 +1,3 @@
+target_sources_ifdef(CONFIG_ENABLE_BATTERY_REPORTER app PRIVATE src/widget.c)
+
+zephyr_include_directories(include)

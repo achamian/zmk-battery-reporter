@@ -1,0 +1,9 @@
+config ENABLE_BATTERY_REPORTER
+    bool "Enable battery reporter widget"
+    default y
+
+DT_COMPACT_ZMK_BEHAVIOR_BATTERY_REPORTER := zmk,behavior-battery-reporter
+
+config ZMK_BEHAVIOR_BATTERY_REPORTER
+    bool
+    default $(dt_compat_enabled,$(DT_COMPAT_ZMK_BEHAVIOR_BATTARY_REPORTER))

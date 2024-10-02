@@ -1,0 +1,9 @@
+/ {
+    behaviors {
+        /omit-if-no-ref/ rep_batt: rep_batt {
+            compatible = "zmk,behavior-battery-reporter";
+            #binding-cells = <0>;
+            report-battery;
+        };
+    };
+};

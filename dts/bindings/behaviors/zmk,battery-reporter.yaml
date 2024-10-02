@@ -1,0 +1,9 @@
+description: Report battery level as keypress
+
+compatible: "zmk,behavior-battery-reporter"
+
+include: zero_param.yaml
+
+properties:
+  report-battery:
+    type: boolean
